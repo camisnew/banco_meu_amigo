@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       onGenerateRoute: getAppRoutes().getRoutes,
       debugShowCheckedModeBanner: false,
-      title: 'Trabalho 1n2',
+      title: 'Amigo - NoBanco',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.deepOrange,
       ),
     );
   }

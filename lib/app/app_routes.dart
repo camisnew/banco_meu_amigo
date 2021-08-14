@@ -22,14 +22,14 @@ class AppRoutes {
       case APP_ROUTE_AMIGO_INFO: {
         return MaterialPageRoute<void>(
           settings: routeSettings,
-          builder: (BuildContext context) => AmigoInfo(title: '',)
+          builder: (BuildContext context) => AmigoInfo(title: 'Sobre AmigoCard',)
         );
       }
 
       case APP_ROUTE_AMIGO_CARD: {
         return MaterialPageRoute<void>(
           settings: routeSettings,
-          builder: (BuildContext context) => AmigoCard(title: '',)
+          builder: (BuildContext context) => AmigoCard(title: 'Seu Amigo',)
         );
       }
 

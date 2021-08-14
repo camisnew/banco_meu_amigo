@@ -18,7 +18,14 @@ class _AmigoInfoState extends State<AmigoInfo> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text('amigo, amigo'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Conheça os amigos responsáveis pelo Amigo Card!'),
+            Text('Camila : camilabertholdpires@gmail.com | github.com/camisnew'),
+            Text('Luan : luanb.aguiar@gmail.com | github.com/luanborrges'),
+          ],
+        ),
       ),
     );
   }
