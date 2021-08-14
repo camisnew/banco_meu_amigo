@@ -52,10 +52,9 @@ class _AmigoCardState extends State<AmigoCard> {
     return Card(
       elevation: 0.0,
       margin: EdgeInsets.only(left: 32.0, right: 32.0, top: 50.0, bottom: 100.0),
-      color: Colors.deepPurple,
       child: FlipCard(
         key: _cardKey,
-        flipOnTouch: false,
+        flipOnTouch: true,
         direction: FlipDirection.HORIZONTAL,
         speed: 1000,
         onFlipDone: (status) {
@@ -85,11 +84,6 @@ class _AmigoCardState extends State<AmigoCard> {
             ],
           ),
         ],
-      ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => _cardKey.currentState!.toggleCard(),
-        tooltip: 'Test',
-        child: Icon(Icons.add),
       ),
     );
   }
