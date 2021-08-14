@@ -18,10 +18,10 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-
-
             TextButton.icon(
               icon: Icon(Icons.info),
               label: Text('Sobre o app'),
@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
           ]
+        ),
       ),
     );
   }
