@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'views.dart';
+import '../app/app_routes.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -25,14 +25,14 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.info),
               label: Text('Sobre o app'),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => AmigoInfo(title: 'Amigo Info')));
+                Navigator.pushNamed(context, AppRoutes.APP_ROUTE_AMIGO_INFO);
               },
             ),
             TextButton.icon(
               icon: Icon(Icons.people_alt_outlined),
               label: Text('Meu amigo'),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => AmigoCard(title: 'Amigo Card')));
+                Navigator.pushNamed(context, AppRoutes.APP_ROUTE_AMIGO_CARD);
               },
             ),
           ]
