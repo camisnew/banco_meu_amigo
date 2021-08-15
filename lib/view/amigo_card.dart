@@ -41,9 +41,7 @@ class _AmigoCardState extends State<AmigoCard> {
           borderRadius: BorderRadius.all(Radius.circular(20.0))
       ),
       child: Center(
-        child: Text(
-          'Clique aqui', style: TextStyle(fontSize: 22.0, color: Colors.white),
-        ),
+        child: Image.network('https://media.discordapp.net/attachments/278958026134913024/876609572742238268/cartao.png')
       ),
     );
   }
