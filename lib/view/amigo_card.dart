@@ -80,7 +80,7 @@ class _AmigoCardState extends State<AmigoCard> {
             children: [
               Container(
                 width: 500,
-                height: 400,
+                height: 450,
                 child: _renderCard(context),
               )
             ],
