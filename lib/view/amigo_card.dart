@@ -1,4 +1,5 @@
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AmigoCard extends StatefulWidget {
@@ -25,7 +26,7 @@ class _AmigoCardState extends State<AmigoCard> {
   _renderBack(){
     return Container(
       decoration: BoxDecoration(
-        color: Colors.deepPurple,
+        color: Colors.black,
         borderRadius: BorderRadius.all(Radius.circular(20.0))
       ),
       child: Center(
@@ -37,11 +38,12 @@ class _AmigoCardState extends State<AmigoCard> {
   _renderFront(){
     return Container(
       decoration: BoxDecoration(
-          color: Colors.deepOrange,
+          color: Colors.black,
           borderRadius: BorderRadius.all(Radius.circular(20.0))
       ),
       child: Center(
-        child: Image.network('https://media.discordapp.net/attachments/278958026134913024/876609572742238268/cartao.png')
+        child:
+          Image.network('https://media.discordapp.net/attachments/278958026134913024/876609572742238268/cartao.png')
       ),
     );
   }
@@ -76,7 +78,9 @@ class _AmigoCardState extends State<AmigoCard> {
           _renderBackground(),
           Column(
             children: [
-              Expanded(
+              Container(
+                width: 500,
+                height: 400,
                 child: _renderCard(context),
               )
             ],
