@@ -33,7 +33,7 @@ class _AmigoInfoState extends State<AmigoInfo> {
               children: [
                 Text('Impressões do Flutter:'),
                 Text('Camila : O que falar do flutterzin?! Tá sendo muito intuitivo e divertido!'),
-                Text('Luan : Gostando bastante do conteúdo.'),
+                Text('Luan : tá dando um nó mas passo bem'),
               ],
             ),
           ],

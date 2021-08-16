@@ -30,7 +30,7 @@ class _AmigoCardState extends State<AmigoCard> {
         borderRadius: BorderRadius.all(Radius.circular(20.0))
       ),
       child: Center(
-        child: Image.network('https://media.discordapp.net/attachments/278958026134913024/876659038593622016/cartao_verso.png?width=1187&height=670')
+        child: Image.network('https://media.discordapp.net/attachments/278958026134913024/876659038593622016/cartao_verso.png')
       ),
     );
   }
